@@ -45,4 +45,4 @@ if __name__ == '__main__':
     print(rect2)
     print(rect2)
     print(rect2.perimeter())
-    print(rect2.are())
+    print(rect2.area())

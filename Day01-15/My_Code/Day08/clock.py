@@ -42,7 +42,7 @@ class Clock(object):
         return '%02d:%02d:%02d' % (self._hour, self._minute, self._second)
 
 if __name__ == '__main__':
-    print(os.path.abspath('./clock.py'))
+    # print(os.path.abspath('./clock.py'))
     clock = Clock()
     while True:
         os.system('cls')
