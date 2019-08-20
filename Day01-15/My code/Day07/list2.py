@@ -43,6 +43,7 @@ def main():
     for idx, key in enumerate(fruits): # 当元素不止一个时使用
         if key == 'apple':
             print(idx,end=' ')
+    print()
 
 if __name__ == '__main__':
     main()

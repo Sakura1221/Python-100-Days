@@ -19,7 +19,7 @@ def main():
     set2.update(range(5,11))
     print(set2)
     # 删除元素
-    set2.pop() # 删除第一个元素
+    print(set2.pop()) # 删除第一个元素并返回，字典和字符组成的字典随机删除
     print(set2)
     set2.discard(11) # 如果不存在不会报错
     print(set2)

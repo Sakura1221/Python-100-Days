@@ -25,7 +25,8 @@ def main():
     print(fruits)
     del fruits[2] # 删除指定下标元素
     print(fruits)
-    fruits.remove('apple') # 删除指定元素
+    if 'abc' in fruits:
+        fruits.remove('abc') # 删除指定元素,remove不存在会报错
     print(fruits)
 
 
