@@ -65,9 +65,13 @@ class Son(Father, Monk, Musician):
     def __init__(self, name):
 
         # 调用父类构造器初始化一定要加self参数，初始化顺序无影响
-        Father.__init__(self, name)
-        Monk.__init__(self, name)
-        Musician.__init__(self, name)
+        # Father.__init__(self, name)
+        # Monk.__init__(self, name)
+        # Musician.__init__(self, name)
+
+        # 分开写很麻烦，还有可能存在重复继承情况，使用super方法即可解决
+        super(Son, self).__init__(name)
+
 
 son = Son('王大锤')
 son.gamble()
